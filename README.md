@@ -12,4 +12,4 @@ The repository's content, privacy can be changed anytime
 
 All Right Reserved, Release Notes, Details And Functionalities Will Be Deployed Soon.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3e0f4c47-e584-46cb-91a2-e11e071a90c8/deploy-status)](https://app.netlify.com/sites/tiktaktoego/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f01dba16-941b-484f-97a7-a529b5f7e855/deploy-status)](https://app.netlify.com/sites/tiktaktoego/deploys)
