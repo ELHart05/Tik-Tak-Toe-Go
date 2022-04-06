@@ -16,7 +16,6 @@ const Xspan = document.querySelector('.X');
 const Ospan = document.querySelector('.O');
 const Drawspan = document.querySelector('.Draw');
 const ReplayBtn = document.querySelector('.replay');
-const body = document.querySelector('body');
 
 let turnTime = 0;
 row1 = [];
@@ -188,7 +187,6 @@ function ReplayAll() {
     cross2 = [];
     RemoveBGAll();
     UnFreezAll();
-    UnFreez(HelpBtn);
     UnFreez(ReplayBtn);
     Winp.style.display = image.style.display = 'flex';
     image.classList.remove('somemargin');
