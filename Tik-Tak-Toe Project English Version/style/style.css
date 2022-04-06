@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/*Following Style Is For The English Version*/
+
+
+/*I Used Some Simple Margins And Paddings For Images To Edit It With The Appearance*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', tahoma;
+}
+
+body {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.8s;
+}
+
+.line1,
+.line2,
+.line3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main>div>button {
+    border: 1px solid black;
+    padding: 50px;
+    margin: 2px;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.7s;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+.main>div>button:hover {
+    box-shadow: black 0 0 10px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1>span {
+    font-weight: 200;
+}
+
+.Draw {
+    margin-bottom: 9px;
+}
+
+.X-img,
+.O-img {
+    margin: 0 0 0 3px;
+}
+
+.turn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 5px;
+    font-weight: 200;
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    height: 40px;
+    width: 40px;
+    margin-top: 4px;
+    margin-right: 2px;
+}
+
+.score {
+    display: flex;
+    justify-content: space-evenly;
+    width: calc(102px * 3);
+}
+
+.buttoneffect {
+    margin-top: 5px;
+    padding: 10px 15px;
+    background-color: rgb(248, 246, 246);
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.replay:hover {
+    box-shadow: black 0 0 10px 0;
+}
+
+.arabic:hover {
+    box-shadow: black 0 0 10px 0;
+}
+
+.instructions {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 15px;
+    padding: 5px 12px;
+}
+
+.instructions:hover {
+    box-shadow: black 0 0 10px 0;
+}
+
+.languages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+.languages>a {
+    padding: 5px 12px;
+    margin-left: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.english {
+    background-color: pink;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*for X*/
+.span {
+    color: red;
+    transition: 0.7s;
+}
+
+.backgroundX {
+    background-image: url(../../images/X.png);
+    background-position: 60% center;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*for O*/
+.spancolorchange {
+    color: rgb(0, 179, 255);
+    transition: 0.7s;
+}
+
+.backgroundO {
+    background-image: url(../../images/O.png);
+    background-position: 52% center;
+}
+
+.somemargin {
+    /*some margin for O winning condition*/
+    margin-right: 4px;
+}
+
+.buttonWinner {
+    /*adding winning background for the winning condition*/
+    background-color: rgb(98, 183, 98);
+}
+
+@media (max-width:350px) {
+    .main>div>button {
+        padding: 35px;
+        margin: 1px;
+    }
+
+    h1,
+    h2 {
+        font-size: 25px;
+    }
+
+    img {
+        height: 25px;
+        width: 25px;
+        margin-top: 6.5px;
+        margin-right: 3px;
+    }
+
+    .score {
+        width: calc(72px * 3);
+    }
+
+    .replay {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+}
