@@ -118,18 +118,6 @@ img {
     box-shadow: black 0 0 10px 0;
 }
 
-.instructions {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 15px;
-    padding: 5px 12px;
-}
-
-.instructions:hover {
-    box-shadow: black 0 0 10px 0;
-}
-
 .languages {
     display: flex;
     align-items: center;
@@ -182,6 +170,12 @@ img {
 .buttonWinner {
     /*adding winning background for the winning condition*/
     background-color: rgb(98, 183, 98);
+}
+
+@media (max-width:700px) and (min-width: 100px) {
+    .main>div>button:hover {
+        box-shadow: none;
+    }
 }
 
 @media (max-width:350px) {
